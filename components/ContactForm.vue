@@ -2,22 +2,22 @@
     <form id="contact-form" class="text-sm">
         <div class="flex flex-col">
             <label for="name-input" class="mb-3">_name:</label>
-            <input type="text" id="name-input" name="name" :placeholder="name" class="p-2 mb-5 placeholder-slate-600" required>
+            <input type="text" id="name-input" name="name" :placeholder="name" class="p-2 mb-5 placeholder-slate-600" maxlength="30" required>
         </div>
         <div class="flex flex-col">
             <label for="email-input" class="mb-3">_email:</label>
-            <input type="email" id="email-input" name="email" :placeholder="email" class="p-2 mb-5 placeholder-slate-600" required>
+            <input type="email" id="email-input" name="email" :placeholder="email" class="p-2 mb-5 placeholder-slate-600" maxlength="40" required>
         </div>
         <div class="flex flex-col">
             <label for="message-input" class="mb-3">_message:</label>
-            <textarea id="message-input" name="message" :placeholder="message" class="placeholder-slate-600" required></textarea>
+            <textarea id="message-input" name="message" :placeholder="message" class="placeholder-slate-600" maxlength="2000" required></textarea>
         </div>
         <button id="submit-button" type="submit" class="py-2 px-4">submit-message</button>
     </form>
 </template>
 
 <script>
-
+import emailjs from '@emailjs/browser';
 
 export default {
     name: 'ContactForm',
@@ -38,14 +38,41 @@ export default {
     mounted() {
         document.getElementById("contact-form").addEventListener("submit", function(event) {
             event.preventDefault();
-            const name = document.querySelector('input[name="name"]').value;
-            const email = document.querySelector('input[name="email"]').value;
-            const message = document.querySelector('textarea[name="message"]').value;
+            const name = document.querySelector('input[name="name"]');
+            const email = document.querySelector('input[name="email"]');
+            const message = document.querySelector('textarea[name="message"]');
             
-            // Here the code to send the email
-            
-        });
-    }
+            // sign up on emailjs.com (select the gmail service and connect your account).
+            //click on create a new template then click on save.
+            emailjs
+            .send(
+                'service_hiceptk', // paste your ServiceID here (you'll get one when your service is created).
+                'template_4xd9rbl', // paste your TemplateID here (you'll find it under email templates).
+                {
+                from_name: name.value,
+                to_name: 'Abdalla', // put your name here.
+                from_email: email.value,
+                to_email: 'abdalladimes@gmail.com', //put your email here.
+                message: message.value,
+                },
+                'D1U-kzgWzJHkfs2oF' //paste your Public Key here. You'll get it in your profile section.
+            )
+            .then(
+                () => {
+                alert('Thank you. I will get back to you as soon as possible.');
+
+                name.value = '';
+                email.value = '';
+                message.value = '';
+                },
+                (error) => {
+                console.log(error);
+                alert('Something went wrong. Please try again.');
+                }
+            );
+                    
+                });
+            }
 }
 </script>
 

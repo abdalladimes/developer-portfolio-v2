@@ -9,8 +9,8 @@
 
       <!-- DESKTOP section icons -->
       <div id="sections">
-        <div id="section-icon" v-for="section in config.about.sections" :key="section.title" :class="{ active: isSectionActive(section.title)}">
-          <img :id="'section-icon-' + section.title" :src="section.icon" :alt="section.title + '-section'" @click="focusCurrentSection(section)">
+        <div id="section-icon" v-for="section in config.about.sections" :key="section.title" :class="{ active: isSectionActive(section.title)}" @click="focusCurrentSection(section)">
+          <img :id="'section-icon-' + section.title" :src="section.icon" :alt="section.title + '-section'">
         </div>
       </div>
 
@@ -31,12 +31,6 @@
               <img :src="'/icons/folder' + (index+1) + '.svg'" alt="" class="mr-3">
               <p :id="folder.title" v-html="key" :class="{ active: isActive(folder.title)}"></p>
             </div>
-            <div v-if="folder.files !== undefined" class="col-span-2">
-              <div v-for="(file, key) in folder.files" :key="key" class="hover:text-white hover:cursor-pointer flex my-2">
-                <img src="/icons/markdown.svg" alt="" class="ml-8 mr-3"/>
-                <p >{{ key }}</p>
-              </div> 
-            </div>
           </div>
         </div>
 
@@ -48,10 +42,10 @@
         <div id="contact-sources" class="hidden lg:flex lg:flex-col my-2">
           <div v-for="(source, key) in config.contacts.direct.sources" :key="key" class="flex items-center mb-2">
             <img :src="'/icons/' + key + '.svg'" alt="" class="mx-4">
-            <a v-html="source" href="/" class="font-fira_retina text-menu-text hover:text-white"></a>
+            <a  v-if="key === 'email'" v-html="source" :href="'mailto:' + source" class="font-fira_retina text-menu-text hover:text-white"></a>
+            <a  v-if="key === 'phone'" v-html="source" :href="'tel:' + source" class="font-fira_retina text-menu-text hover:text-white"></a>
           </div>
         </div>
-
       </div>
 
       <!-- mobile -->
@@ -95,7 +89,8 @@
         <div id="contacts" class="hidden">
           <div v-for="(source, key) in config.contacts.direct.sources" :key="key" class="flex items-center my-2">
             <img :src="'/icons/' + key + '.svg'" alt="">
-            <a v-html="source" href="/" class="font-fira_retina text-menu-text hover:text-white ml-4"></a>
+            <a  v-if="key === 'email'" v-html="source" :href="'mailto:' + source" class="font-fira_retina text-menu-text hover:text-white"></a>
+            <a  v-if="key === 'phone'" v-html="source" :href="'tel:' + source" class="font-fira_retina text-menu-text hover:text-white"></a>
           </div>
         </div>
 
@@ -105,7 +100,8 @@
     <!-- MENU END -->
 
     <!-- content -->
-    <div class="flex flex-col lg:grid lg:grid-cols-2 h-full w-full">
+     <!-- TODO: to enable github gists, add "lg:grid lg:grid-cols-2" classes to the below div  -->
+    <div class="flex flex-col h-full w-full">
       
       <div id="left" class="w-full flex flex-col border-right">
         
@@ -142,8 +138,8 @@
       </div>
       
     </div>
-
-    <div id="right" class="max-w-full flex flex-col">
+    <!-- TODO: this is for github gists, maybe in the future, just remove style -->
+    <div id="right" style="display: none;" class="max-w-full flex flex-col">
         
       <!-- windows tab -->
       <div class="tab-height w-full h-full hidden lg:flex border-bot items-center">
@@ -154,20 +150,13 @@
       <div class="tab-height w-full h-full flex-none lg:hidden items-center">
 
       </div>
-
         <div id="gists-content" class="flex">
-        
           <div id="gists" class="flex flex-col lg:px-6 lg:py-4 w-full overflow-hidden">
-            <!-- title -->
             <h3 class="text-white lg:text-menu-text mb-4 text-sm">// Code snippet showcase:</h3>
-
             <div class="flex flex-col overflow-scroll">
-              <!-- snippets -->
               <GistSnippet data-aos="fade-down" v-for="(gist, key) in config.gists" :key="key" :id="gist" />
             </div>
           </div>
-
-          <!-- scroll bar -->
           <div id="scroll-bar" class="h-full border-left hidden lg:flex justify-center py-1">
             <div id="scroll"></div>
           </div>

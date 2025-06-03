@@ -35,6 +35,7 @@ export default {
   top: 0;
   border: 0;
   right: 0;
+  z-index: -1;
 }
 
 .github-corner:hover .octo-arm {

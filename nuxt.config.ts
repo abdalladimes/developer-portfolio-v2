@@ -9,6 +9,7 @@ const siteTitle = `${config.name} | ${config.role}`
 export default defineNuxtConfig({
   compatibilityDate: '2025-02-28',
   devtools: { enabled: true },
+  ssr: false,
   /**
    * * App Config
    * app config: https://nuxt.com/docs/api/configuration/nuxt-config#app
@@ -31,7 +32,6 @@ export default defineNuxtConfig({
         { hid: 'description', name: 'description', content: 'A awesome developer portfolio design.' },
         { hid: 'og:title', property: 'og:title', content: siteTitle },
         { hid: 'og:description', property: 'og:description', content: 'A awesome developer portfolio design.' },
-        { hid: 'og:image', property: 'og:image', content: 'demo-share.jpg' },
         { hid: 'og:url', property: 'og:url', content: 'https://developer-portfolio-v1.netlify.app/' },
         { name: 'theme-color', content: '#010C15' },
         // ...

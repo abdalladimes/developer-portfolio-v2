@@ -10,9 +10,6 @@
                 <NuxtLink :to="social.twitter.url + social.twitter.user" target="_blank" class="flex justify-center items-center">
                     <img src="/icons/social/twitter.svg" alt="twitter"/>
                 </NuxtLink>
-                <NuxtLink :to="social.facebook.url + social.facebook.user" target="_blank" class="flex justify-center items-center">
-                    <img src="/icons/social/facebook.svg" alt="facebook"/>
-                </NuxtLink>
                 <NuxtLink :to="social.github.url + social.github.user" target="_blank" class="flex md:hidden justify-center items-center">
                 <img src="/icons/social/github.svg" alt="github"/>
             </NuxtLink>

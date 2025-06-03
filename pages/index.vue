@@ -22,9 +22,9 @@
 				<span class="action">
 					// complete the game to continue
 				</span>
-				<span :class="{hide: isMobile}">
+				<!-- <span :class="{hide: isMobile}">
 					// you can also see it on my Github page
-				</span>
+				</span> -->
 				<span :class="{hide: !isMobile}">
 					// find my profile on Github:
 				</span>

@@ -1,7 +1,7 @@
 {
-    "name": "Micheal Weaver",
-    "logo_name": "micheal-weaver",
-    "role": "Front-end developer",
+    "name": "Abdalla Dimes",
+    "logo_name": "abdalladimes",
+    "role": "Software Engineer",
     "about": {
         "sections": {
             "professional-info": {
@@ -10,15 +10,15 @@
                 "info": {
                     "experience": {
                         "title": "experience",
-                        "description": "<br>Over the past 5 years, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+                        "description": "<br>Software Engineer II<br>Buildfire<br>Aug 2023 - Present<br><br>Senior Software Engineer<br>Truckin Central<br>Apr 2022 - Aug 2023<br><br>Fullstack Developer and Trainer<br>SociumTech - Optimum Partners<br>Sep 2021 - Apr 2022<br><br>CTO<br>Trustworth Labs<br>Jan 2018 - Present<br><br><button onclick='window.open(`/files/Abdalla Dimes CV.pdf`, `_blank`)'>MY RESUME</button>"
                     },
                     "hard-skills": {
                         "title": "hard-skills",
-                        "description": "<br>As a front-end developer, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+                        "description": "<br>As a software engineer, my technical expertise allows me to translate design visions into functional realities. I am skilled in creating pixel-perfect replicas of Figma designs, ensuring a high level of visual accuracy in my work. Furthermore, I focus on engineering all methods and components in a reusable and efficient manner, promoting maintainable and scalable solutions."
                     },
                     "soft-skills": {
                         "title": "soft-skills",
-                        "description": "<br>I bring more than Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br><br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+                        "description": "<br>I pride myself on being an approachable and collaborative team member, finding it easy to integrate and work effectively with others. I am particularly energized by tackling large and complex projects, where I can contribute meaningfully to significant undertakings and see them through to completion."
                     }
                 }
             },
@@ -28,19 +28,15 @@
                 "info": { 
                     "bio": {
                         "title": "bio",
-                        "description": "<br> About me <br> I have 5 years of experience in web development lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat  nulla pariatur. Excepteur sint occaecat  officia deserunt mollit anim id est laborum."
+                        "description": "<br> As a passionate computer engineer turned software engineer, I've dedicated my career to blending innovation with functionality, crafting digital solutions that not only meet but exceed expectations. With a keen eye for detail and a penchant for problem-solving, I thrive in dynamic environments where creativity intersects with technical expertise."
                     },
                     "interests": {
                         "title": "interests",
-                        "description": "<br>I am constantly learning and lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+                        "description": "<br>My interests include continuously exploring new technologies and engaging in creative project development."
                     },
                     "education": {
                         "title": "education",
-                        "description": "<br>I have always been passionate about lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-                        "files": {
-                            "high-school": "I have been in 'Las viñas'...",
-                            "university": "The university..."
-                        }
+                        "description": "<br>I studied Computer Engineering, but honestly, I was always way more into the software and programming side of things. That's where my real passion lies!"
                     }
                 }
             },
@@ -50,11 +46,11 @@
                 "info": {
                     "sports": {
                         "title": "sports",
-                        "description": "<br>I am an avid sports enthusiast and lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+                        "description": "<br>My interests extend beyond the screen and into the physical realm. I'm passionate about staying active and find joy in several sports: from exploring scenic trails through hiking, to pushing my physical limits with bodybuilding, enjoying the open road through cycling, and finding a refreshing workout in swimming."
                     },
                     "favorite-games": {
                         "title": "favorite-games",
-                        "description": "<br>I am a passionate gamer with Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br><br> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                        "description": "<br>FarCry <br>Call of Duty <br>Counter-Strike <br>Dead Island<br>Grand Theft Auto<br>Assassin's Creed"
                     }
                 }
             }
@@ -64,25 +60,20 @@
         "direct": {
             "title": "contacts",
             "sources": {
-                "email": "user@gmail.com",
-                "phone": "+3598246359"
+                "email": "abdalladimes@gmail.com",
+                "phone": "+962799458929"
             }
         },
         "social": {
             "github": {
                 "title": "Github profile",
                 "url": "https://github.com/",
-                "user": "username"
-            },
-            "facebook": {
-                "title": "Facebook profile",
-                "url": "https://facebook.com/",
-                "user": "username"
+                "user": "abdalladimes"
             },
             "twitter": {
                 "title": "Twitter account",
                 "url": "https://twitter.com/",
-                "user": "username"
+                "user": "abdalladimes"
             }
         },
         "find_me_also_in": {
@@ -93,20 +84,10 @@
                     "url": "https://www.youtube.com/",
                     "user": "username"
                 },
-                "gurushots": {
-                    "title": "GuruShots profile",
-                    "url": "https://gurushots.com/",
-                    "user": "username"
-                },
                 "instagram": {
                     "title": "Instagram account",
                     "url": "https://instagram.com/",
-                    "user": "username"
-                },
-                "twitch": {
-                    "title": "Twitch profile",
-                    "url": "https://twitch.com/",
-                    "user": "username"
+                    "user": "abdalladimes"
                 }
             }
         }
@@ -158,5 +139,9 @@
             "tech": ["Vue"],
             "url": "https://github.com/"
         }
+    },
+    "cv": {
+        "title": "cv",
+        "url": "/files/Abdalla Dimes CV.pdf"
     }
 }
