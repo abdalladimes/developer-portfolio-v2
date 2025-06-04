@@ -10,6 +10,7 @@
       <!-- DESKTOP section icons -->
       <div id="sections">
         <div id="section-icon" v-for="section in config.about.sections" :key="section.title" :class="{ active: isSectionActive(section.title)}" @click="focusCurrentSection(section)">
+          <div class="glowing-part"></div>
           <img :id="'section-icon-' + section.title" :src="section.icon" :alt="section.title + '-section'">
         </div>
       </div>
@@ -109,7 +110,9 @@
         <div class="tab-height w-full hidden lg:flex border-bot items-center">
           <div class="flex items-center border-right h-full">
             <p v-html="config.about.sections[currentSection]?.title" class="font-fira_regular text-menu-text text-sm px-3"></p>
-            <img src="/icons/close.svg" alt="" class="mx-3">
+            <a href="/">
+              <img src="/icons/close.svg" alt="" class="mx-3">
+            </a>
           </div>
         </div>
 
@@ -185,10 +188,35 @@
 #section-icon {
   @apply my-6 hover:cursor-pointer flex justify-center;
   opacity: 0.4;
+  position: relative;
 }
 
 #section-icon.active {
   opacity: 1;
+}
+
+#section-icon.active .glowing-part {
+  animation: glow 2s infinite alternate; /* 2s duration, infinite loop, alternates direction */
+  height: 10px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: translate(27px, 8px);
+  width: 10px;
+  z-index: -1; 
+}
+
+/* Define the keyframes for the glow animation */
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* Initial subtle glow */
+  }
+  50% {
+    box-shadow: 0 0 15px 2px rgba(255, 255, 255, 0.8); /* Brighter, more spread out glow */
+  }
+  100% {
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* Return to initial subtle glow */
+  }
 }
 
 #section-icon:hover {
