@@ -285,6 +285,14 @@
   padding: 0px 25px;
 }
 
+
+  #my-resume-btn {
+    color:#0ebae6;
+  }
+  #my-resume-btn:hover {
+    text-decoration: underline;
+  }
+
 </style>
 
 <script>
@@ -292,8 +300,8 @@ import DevConfig from '~/developer.json';
 export default {
   data() {
     return {
-      currentSection: 'personal-info',
-      folder: 'bio',
+      currentSection: 'professional-info',
+      folder: 'experience',
       loading: true,
     }
   },

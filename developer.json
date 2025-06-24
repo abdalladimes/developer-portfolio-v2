@@ -10,7 +10,7 @@
                 "info": {
                     "experience": {
                         "title": "experience",
-                        "description": "<br>Software Engineer II<br>Buildfire<br>Aug 2023 - Present<br><br>Senior Software Engineer<br>Truckin Central<br>Apr 2022 - Aug 2023<br><br>Fullstack Developer and Trainer<br>SociumTech - Optimum Partners<br>Sep 2021 - Apr 2022<br><br>CTO<br>Trustworth Labs<br>Jan 2018 - Present<br><br><button onclick='window.open(`/files/Abdalla Dimes CV.pdf`, `_blank`)'>MY RESUME</button>"
+                        "description": "<br>Senior Software Engineer<br>Buildfire<br>Aug 2023 - Present<br><br>Senior Software Engineer<br>Truckin Central<br>Apr 2022 - Aug 2023<br><br>Fullstack Developer and Trainer<br>SociumTech - Optimum Partners<br>Sep 2021 - Apr 2022<br><br>Founder/CTO<br>Trustworth Labs<br>Jan 2018 - Present<br><br><button id='my-resume-btn' onclick='window.open(`/files/Abdalla Dimes CV.pdf`, `_blank`)'>MY RESUME</button>"
                     },
                     "hard-skills": {
                         "title": "hard-skills",
